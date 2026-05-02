@@ -77,12 +77,12 @@ Both sensors trigger paddle flaps over GPIO. The ball bounces, speeds up on each
 
 ### 4.3 Stretch Features
 
-Online leaderboard display  
-Configurable winning score (first to 5, 10, etc.)  
-Power-ups that temporarily change gravity or ball size  
-Multiplayer over network (two Raspberry Pi units)  
-Animated menu with live demo ball  
-Custom paddle skin selector  
+- Online leaderboard display
+- Configurable winning score (first to 5, 10, etc.)
+- Power-ups that temporarily change gravity or ball size
+- Multiplayer over network (two Raspberry Pi units)
+- Animated menu with live demo ball
+- Custom paddle skin selector
 
 ---
 
@@ -90,11 +90,11 @@ Custom paddle skin selector
 
 ### 5.1 Project Type
 
-[x] Electronics-based  
-[x] Sensor-based  
-[x] Screen/UI-based  
-[x] Game logic based  
-[x] Sound-based  
+- [x] Electronics-based
+- [x] Sensor-based
+- [x] Screen/UI-based
+- [x] Game logic based
+- [x] Sound-based
 
 ---
 
@@ -177,8 +177,8 @@ The Raspberry Pi's 3.3 V pin (Pin 1) supplies both capacitive touch sensor modul
 The Raspberry Pi reads each pin every frame using `rppal::gpio::InputPin::is_high()`. Since the sensors output a clean digital HIGH when touched, no pull-up or pull-down resistors are required. The monitor connects via HDMI and the speaker via the 3.5 mm audio jack. The board is powered by a 5 V USB-C supply — no battery pack needed since the game has no motors.
 
 ### 7.3 Circuit Diagram
-7.3 Circuit Diagram
 
+```
 ===============================
 Raspberry Pi 4 GPIO Connections
 ===============================
@@ -215,6 +215,7 @@ System Behavior:
   GPIO pins remain LOW
 
 ----------------------------------------------
+```
 
 
 ### 7.4 Power Plan
@@ -362,46 +363,46 @@ Tasks are divided by domain: Mrugendra owns the Rust codebase, game logic, and a
 
 **Bi-Hour 1 — Plan and De-risk**
 
-[x] Idea finalized (Flappy Pong — gravity paddles + physical sensors)  
-[x] Core interaction decided (capacitive tap = flap impulse)  
-[x] Sketches made  
-[x] BOM completed  
-[x] Purchase needs identified (none — all in kit)  
-[x] Key uncertainty identified (GPIO timing and edge detection in Rust)  
-[x] Basic feasibility tested (Raylib hello-world on Pi)  
+- [x] Idea finalized (Flappy Pong — gravity paddles + physical sensors)
+- [x] Core interaction decided (capacitive tap = flap impulse)
+- [x] Sketches made
+- [x] BOM completed
+- [x] Purchase needs identified (none — all in kit)
+- [x] Key uncertainty identified (GPIO timing and edge detection in Rust)
+- [x] Basic feasibility tested (Raylib hello-world on Pi)
 
 ---
 
 **Bi-Hour 2 — Build Subsystems**
 
-[x] Electronics tests completed (sensors read correctly on GPIO 17 and 27)  
-[x] Paddle physics implemented and visible  
-[x] Keyboard-based flap working before GPIO integration  
-[x] Ball movement and wall bounce working  
+- [x] Electronics tests completed (sensors read correctly on GPIO 17 and 27)
+- [x] Paddle physics implemented and visible
+- [x] Keyboard-based flap working before GPIO integration
+- [x] Ball movement and wall bounce working
 
 ---
 
 **Bi-Hour 3 — Integrate**
 
-[x] GPIO edge detection integrated with paddle impulse  
-[x] Both sensors driving both paddles live  
-[x] Collision detection and scoring working  
-[x] Audio buffers synthesized and playing on events  
+- [x] GPIO edge detection integrated with paddle impulse
+- [x] Both sensors driving both paddles live
+- [x] Collision detection and scoring working
+- [x] Audio buffers synthesized and playing on events
 
 ---
 
 **Bi-Hour 4 — Refine and Finish**
 
-[x] Bat renderer (lollipop paddle art) complete  
-[x] Ball trail and speed-color interpolation added  
-[x] Difficulty menu with stats display complete  
-[x] Playtesting completed  
-[x] Documentation completed  
-[x] Final build ready and running fullscreen  
+- [x] Bat renderer (lollipop paddle art) complete
+- [x] Ball trail and speed-color interpolation added
+- [x] Difficulty menu with stats display complete
+- [x] Playtesting completed
+- [x] Documentation completed
+- [x] Final build ready and running fullscreen
 
 ---
 
-### 12.2 Update Log
+### 11.2 Update Log
 
 | Day | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |-----|-------------|----------------------|-------------|-----------|
@@ -486,7 +487,6 @@ Game running on monitor — menu screen
 Game running — active rally with ball trail visible  
 Both players in action shot  
 
-```md
 ### Game UI (Running on Monitor)
 ![Game UI](images/ui.png)
 
@@ -495,7 +495,6 @@ Both players in action shot
 
 ### Raspberry Pi GPIO Pin Configuration
 ![GPIO](images/gpio.png)
-```
 
 ---
 
