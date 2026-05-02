@@ -1,4 +1,4 @@
-# FLAPPY PONG (Project Project / Flames)
+# FLAPPY PONG (Flames)
 
 ---
 
