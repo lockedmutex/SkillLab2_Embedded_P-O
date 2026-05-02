@@ -21,7 +21,7 @@
 ### 1.3 Project Title
 `"Flappy Pong: A Gravity-Based Interactive Ping Pong Game"`
 
-<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
+![Flappy Pong Flames Banner](images/flappy_pong_flames_banner.svg)
 
 ### 1.4 One-Line Pitch
 `A gravity-driven ping pong game inspired by Flappy Bird, controlled using touch sensors on Raspberry Pi with real-time interactive gameplay.`
